@@ -69,7 +69,7 @@ class ApplicationController < Sinatra::Base
 
 	get '/all' do
 		@user = User.last
-		"#{@user.username}"
+		"#{@user.password_digest}"
 	end
 
 end
