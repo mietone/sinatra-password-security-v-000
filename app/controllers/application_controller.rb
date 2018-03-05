@@ -67,4 +67,9 @@ class ApplicationController < Sinatra::Base
 		end
 	end
 
+	get '/all' do
+		@users = User.last
+		puts "#{@users.name}"
+	end
+
 end
